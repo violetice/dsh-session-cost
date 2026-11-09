@@ -4,6 +4,8 @@
 
 在 DeepSeek Harness（DSH）Web 侧栏底部添加一个「成本」入口：按 **会话** 与 **工作区** 展示 token 用量和成本估算，并按 DeepSeek 官方的 **Peak / Off-peak** 单价分别计价。
 
+![由 DeepSeek V4.1 Flash 开发，目前累计花费 1.34 元](assets/cost.svg)
+
 ## 功能
 
 - 侧栏底部「成本」按钮，点开浮层面板；侧栏收窄时只显示图标。

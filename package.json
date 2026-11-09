@@ -23,7 +23,8 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
-    "pricing.example.json"
+    "pricing.example.json",
+    "assets/*.svg"
   ],
   "dsh": {
     "bundle": {
