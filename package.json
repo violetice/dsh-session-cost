@@ -1,0 +1,38 @@
+{
+  "name": "dsh-session-cost",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "在 DSH Web 侧栏按会话与工作区展示 token 用量与成本估算（Peak / Off-peak 计价）",
+  "license": "MIT",
+  "author": "Violet_Ice紫冰",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cost",
+    "token-usage"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "pricing.example.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

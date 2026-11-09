@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Session cost board">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#1f6feb" opacity="0.12"/>
+  <rect x="14" y="34" width="7" height="16" rx="2" fill="#1f6feb"/>
+  <rect x="26" y="24" width="7" height="26" rx="2" fill="#1f6feb" opacity="0.75"/>
+  <rect x="38" y="30" width="7" height="20" rx="2" fill="#1f6feb" opacity="0.55"/>
+  <path d="M15 20c4 0 6-2 8-4 2 4 6 6 10 5" fill="none" stroke="#1f6feb" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="46" cy="18" r="6" fill="none" stroke="#1f6feb" stroke-width="3"/>
+  <path d="M46 15v6M44 17h3" stroke="#1f6feb" stroke-width="2" stroke-linecap="round"/>
+</svg>
