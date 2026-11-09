@@ -2,7 +2,7 @@
   "name": "dsh-session-cost",
   "version": "1.0.0",
   "type": "module",
-  "description": "在 DSH Web 侧栏按会话与工作区展示 token 用量与成本估算（Peak / Off-peak 计价）",
+  "description": "在 DSH Web 侧栏按会话与工作区展示 token 用量与成本估算（峰 / 谷分时计价）",
   "license": "MIT",
   "author": "Violet_Ice紫冰",
   "keywords": [

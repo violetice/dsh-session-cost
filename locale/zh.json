@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "会话成本",
-    "description": "按会话所在目录归入工作区，显示每个会话与每个工作区的估算支出，并按 Peak / Off-peak 单价分别计价。"
+    "description": "按会话所在目录归入工作区，显示每个会话与每个工作区的估算支出，并按峰 / 谷分时单价分别计价。"
   },
   "ui": {
     "label": "成本",
@@ -23,9 +23,9 @@
     "updated": "更新于",
     "subagent": "子代理",
     "subagentSessions": "个子代理会话",
-    "peak": "Peak",
-    "offPeak": "Off-peak",
-    "peakCalls": "次 Peak 调用",
+    "peak": "峰",
+    "offPeak": "谷",
+    "peakCalls": "次峰段调用",
     "retry": "重试",
     "noCost": "—",
     "input": "输入",

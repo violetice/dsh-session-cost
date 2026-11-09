@@ -2,7 +2,7 @@
 
 [English](README.en.md) | 中文
 
-在 DeepSeek Harness（DSH）Web 侧栏底部添加一个「成本」入口：按 **会话** 与 **工作区** 展示 token 用量和成本估算，并按 DeepSeek 官方的 **Peak / Off-peak** 单价分别计价。
+在 DeepSeek Harness（DSH）Web 侧栏底部添加一个「成本」入口：按 **会话** 与 **工作区** 展示 token 用量和成本估算，并按 DeepSeek 官方的 **峰 / 谷** 分时单价分别计价。
 
 <p align="center"><img src="assets/cost.svg" alt="由 DeepSeek V4.1 Flash 开发，目前累计花费 1.43 元"></p>
 
@@ -11,7 +11,7 @@
 - 侧栏底部「成本」按钮，点开浮层面板；侧栏收窄时只显示图标。
 - 按工作区分组，`rf4`、`charge-power` 这类子目录各自独立成组，组内按会话列出支出。
 - 每个会话按实际调用的 model 分桶，标签上直接显示该 model 的单独花费。
-- 每次调用用自身时间戳判定 Peak / Off-peak，同一会话跨时段会自动拆价。
+- 每次调用用自身时间戳判定 **峰 / 谷**，同一会话跨时段会自动拆价。
 - 子代理会话默认折叠，父会话列表保持干净。
 - 打开即取数，之后每 30 秒刷新一次，也可手动刷新。
 - 中文 / 英文界面跟随 DSH 语言实时切换。
@@ -54,13 +54,13 @@ fork 出来的会话会复制父会话的历史事件，`inheritedEventCount` �
 
 | 模型 | 时段 | 缓存命中 | 缓存未命中 | 输出 |
 |---|---|---|---|---|
-| deepseek-flash | Peak | 0.04 | 2 | 8 |
-| deepseek-flash | Off-peak | 0.02 | 1 | 4 |
-| deepseek-v4-pro | Peak | 0.3 | 9 | 27 |
-| deepseek-v4-pro | Off-peak | 0.15 | 4.5 | 13.5 |
+| deepseek-flash | 峰 | 0.04 | 2 | 8 |
+| deepseek-flash | 谷 | 0.02 | 1 | 4 |
+| deepseek-v4-pro | 峰 | 0.3 | 9 | 27 |
+| deepseek-v4-pro | 谷 | 0.15 | 4.5 | 13.5 |
 
-- **Peak**：北京时间周一至周五 09:00–12:00、14:00–18:00，法定节假日除外。
-- **Off-peak**：其余所有时段（含周末），价格为 Peak 的一半。
+- **峰**：北京时间周一至周五 09:00–12:00、14:00–18:00，法定节假日除外。
+- **谷**：其余所有时段（含周末），价格为峰的一半。
 - 节假日无法从系统日历推断，在单价文件的 `holidays` 中列出日期即可。
 
 覆盖内置单价：把 [`pricing.example.json`](pricing.example.json) 复制到 `$DSH_HOME/storages/session-cost-pricing.json` 后修改。
