@@ -1,0 +1,15 @@
+{
+  "_help": "Copy to %USERPROFILE%\\.dsh\\storages\\session-cost-pricing.json (or $DSH_HOME/storages/session-cost-pricing.json) and edit. Prices are per 1,000,000 tokens in the currency named below. Peak = Beijing time Mon-Fri 09:00-12:00 and 14:00-18:00, excluding the dates in \"holidays\" and weekends; every other moment uses offPeak. A flat model entry {input,output,cacheRead,cacheWrite} applies to both windows. Key lookup: \"provider/model\" -> \"model\" -> \"provider/*\" -> \"*\". Reloaded on the next board refresh; no restart needed.",
+  "currency": "CNY",
+  "holidays": [],
+  "models": {
+    "deepseek-flash": {
+      "peak": { "input": 2, "output": 8, "cacheRead": 0.04, "cacheWrite": 0 },
+      "offPeak": { "input": 1, "output": 4, "cacheRead": 0.02, "cacheWrite": 0 }
+    },
+    "deepseek-v4-pro": {
+      "peak": { "input": 9, "output": 27, "cacheRead": 0.3, "cacheWrite": 0 },
+      "offPeak": { "input": 4.5, "output": 13.5, "cacheRead": 0.15, "cacheWrite": 0 }
+    }
+  }
+}
