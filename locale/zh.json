@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "会话成本",
+    "description": "按会话所在目录归入工作区，显示每个会话与每个工作区的估算支出，并按 Peak / Off-peak 单价分别计价。"
+  },
+  "ui": {
+    "label": "成本",
+    "title": "会话成本",
+    "subtitle": "按工作区与会话估算支出",
+    "refresh": "刷新",
+    "close": "关闭",
+    "loading": "正在读取会话日志…",
+    "empty": "还没有记录到 token 用量。",
+    "total": "总计",
+    "sessions": "个会话",
+    "requests": "次调用",
+    "tokens": "token",
+    "unassigned": "未归入工作区",
+    "unpriced": "未定价模型",
+    "estimateNote": "成本按单价表估算，token 来自会话日志。",
+    "pricingBuiltin": "内置单价",
+    "pricingFile": "自定义单价文件",
+    "updated": "更新于",
+    "subagent": "子代理",
+    "subagentSessions": "个子代理会话",
+    "peak": "Peak",
+    "offPeak": "Off-peak",
+    "peakCalls": "次 Peak 调用",
+    "retry": "重试",
+    "noCost": "—",
+    "input": "输入",
+    "output": "输出",
+    "cache": "cache"
+  }
+}

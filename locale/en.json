@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Session cost",
+    "description": "Shows estimated spend for every session and workspace, grouped by the workspace that owns each session's directory, with Peak and Off-peak pricing."
+  },
+  "ui": {
+    "label": "Cost",
+    "title": "Session cost",
+    "subtitle": "Estimated spend per workspace and session",
+    "refresh": "Refresh",
+    "close": "Close",
+    "loading": "Reading session logs…",
+    "empty": "No token usage recorded yet.",
+    "total": "Total",
+    "sessions": "sessions",
+    "requests": "requests",
+    "tokens": "tokens",
+    "unassigned": "Outside a workspace",
+    "unpriced": "Unpriced models",
+    "estimateNote": "Cost is estimated from the price table; tokens come from the session log.",
+    "pricingBuiltin": "built-in prices",
+    "pricingFile": "custom price file",
+    "updated": "Updated",
+    "subagent": "subagent",
+    "subagentSessions": "subagent sessions",
+    "peak": "Peak",
+    "offPeak": "Off-peak",
+    "peakCalls": "Peak calls",
+    "retry": "Try again",
+    "noCost": "—",
+    "input": "input",
+    "output": "output",
+    "cache": "cache"
+  }
+}
