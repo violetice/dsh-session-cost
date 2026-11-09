@@ -4,7 +4,7 @@ English | [中文](README.md)
 
 Adds a **Cost** entry at the bottom of the DeepSeek Harness (DSH) Web sidebar: token usage and estimated spend per **session** and per **workspace**, priced with DeepSeek's **Peak / Off-peak** rates.
 
-![Designed, coded and documented by DeepSeek V4.1 Flash, total spend ¥1.34](assets/cost.en.svg)
+<p align="center"><img src="assets/cost.en.svg" alt="Designed, coded and documented by DeepSeek V4.1 Flash, total spend ¥1.34"></p>
 
 ## Features
 
